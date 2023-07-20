@@ -113,6 +113,9 @@ menu {
 .info-box {
     /* Layout */
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
     /* Style */
     border-radius: 8px;
