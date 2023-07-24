@@ -6,6 +6,7 @@
     --button: #3399FD;
 
 }
+
 body {
     font-family: "Aeonik", sans-serif;
     margin: 0;
@@ -31,13 +32,50 @@ h2 {
     margin: 0;
 }
 
-p {
+h3 {
     font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 1%;
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 0.12px;
     margin: 0;
+}
+
+button {
+    display: flex;
+    padding: 12px 24px;
+
+    /* Style */
+    border-radius: 58px;
+    background: var(--button);
+    box-shadow: 0px 8px 16px 0px rgba(51, 153, 253, 0.32);
+    border: 2px solid  var(--button);
+    cursor: pointer;
+
+    /* Typography */    
+    font-family: "Aeonik", sans-serif;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+}
+
+.btn-secondary {
+    background: #fff;
+    box-shadow: none !important;
+    color: #3399FD;
 }
 
 /* Header */
@@ -62,7 +100,7 @@ menu {
     padding: 0;
 }
 
-.menu-hamburger-icon {
+.menu-icon {
     width: 32px;
     cursor: pointer;
 }
@@ -93,6 +131,7 @@ menu {
     border: 1px solid #FFF;
     background: #FFF;
     cursor: pointer;
+    box-shadow: none !important;
 
     /* Typography */
     color: var(--primary);
@@ -107,6 +146,9 @@ menu {
 #content {
     margin-top: -65px;
     padding: 30px 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 /* Info Box */
@@ -137,6 +179,75 @@ menu {
     gap: 10px;
 }
 
-.info-circle, .bi-x {
-    width: 30px !important;
+.info-circle,
+.bi-x {
+    width: 30px;
+}
+
+/* Space Cards */
+
+.sc-list, .selected-sc {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.space-card {
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 20px;
+
+    /* Style */
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.sc-default {
+    background: #ffffff00;
+    border: 1px solid #A4A9B4;
+}
+
+.space-card img {
+    width: 30px;
+}
+
+.sc-text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sc-action {
+    color: var(--button);
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+/* Kitchen Design Service */
+
+#kitchen-design-box {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+
+    /* Style */
+    text-align: center;
+    border-radius: 8px;
+    background: var(--button);
+    color: white;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
 }
