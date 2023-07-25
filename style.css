@@ -349,6 +349,16 @@ input[type="checkbox"]:checked+.checkmark::after {
 
     /* Style */
     border-radius: 8px;
-    border: 1px solid #E6E9F0;
+    border: 1px solid #E6E9F0 !important;
     background: #FAFAFA;
+    outline: none;
+
+    /* Typography */
+    color: #272F3A;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.14px;
 }
