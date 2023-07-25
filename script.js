@@ -107,6 +107,25 @@ var allSpaces = [{
 
 var selectedSpaces = []
 
+// Generate Selected Cards in the Dashboard
+function generateDashboardCards(item) {
+    $(".selected-sc").append(
+        `<h1>${item.name}</h1>`
+    //     `
+    //     <div class="space-card">
+    //         <img src="${item.icon}">
+    //         <div class="sc-text">
+    //             <h3>${item.name}</h3>
+    //             <p class="sc-action">Select Options</p>
+    //         </div>
+    //     </div>
+    // `
+    )
+}
+
+selectedSpaces.forEach(generateDashboardCards);
+
+
 // Generate Card Lists for the Add Spaces Page
 function generateAddSpaceCards(item) {
     if (item.popularSpace == true) {
@@ -193,21 +212,3 @@ function sortChecked(item) {
     } else {}
 
 }
-
-// Generate Selected Cards in the Dashboard
-function generateDashboardCards(item) {
-    $(".selected-sc").append(
-        `<h1>${item.name}</h1>`
-    //     `
-    //     <div class="space-card">
-    //         <img src="${item.icon}">
-    //         <div class="sc-text">
-    //             <h3>${item.name}</h3>
-    //             <p class="sc-action">Select Options</p>
-    //         </div>
-    //     </div>
-    // `
-    )
-}
-
-selectedSpaces.forEach(generateDashboardCards);

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <div>
+    </div>
+
+    <script>
+        function readJSONFromLocalStorage(key) {
+            const data = localStorage.getItem(key);
+            return data ? JSON.parse(data) : null;
+        }
+
+        function writeJSONToLocalStorage(key, data) {
+            localStorage.setItem(key, JSON.stringify(data));
+        }
+
+        const filePath = 'spaceList';
+        const newArray = [1, 2, 3];
+
+        function addArrayToJSON(key, newArray) {
+            const existingData = readJSONFromLocalStorage(key) || [];
+
+            if (Array.isArray(existingData)) {
+                existingData.push(newArray);
+                writeJSONToLocalStorage(key, existingData);
+            }
+        }
+
+        addArrayToJSON(filePath, newArray);
+
+        console.log(readJSONFromLocalStorage(filePath));
+    </script>
+</body>
+</html>
