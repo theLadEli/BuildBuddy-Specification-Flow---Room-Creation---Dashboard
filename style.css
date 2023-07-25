@@ -50,7 +50,7 @@ p {
     margin: 0;
 }
 
-button {
+button, .button {
     display: flex;
     padding: 14px 24px;
     justify-content: center;
@@ -191,7 +191,9 @@ menu {
     gap: 15px;
 }
 
-#room-selection-list {
+#room-selection-list, form {
+    display: flex;
+    flex-direction: column;
     gap: 24px
 }
 

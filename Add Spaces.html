@@ -38,26 +38,30 @@
     <section id="content">
 
         <section id="room-selection-list" class="info-box">
-            <div class="info-box-section">
-                <h2>Add your spaces</h2>
-                <p>Choose the spaces that will be created within your single storey rear extension.</p>    
-            </div>
+            <form action="">
 
-            <div class="info-box-section">
-
-                <h2>Popular Spaces</h2>
-                <div id="popular-rs-list" class="rs-list">
-                    <!-- Room Selection Card List in this div -->
+                <div class="info-box-section">
+                    <h2>Add your spaces</h2>
+                    <p>Choose the spaces that will be created within your single storey rear extension.</p>
                 </div>
 
-                <h2>All Spaces</h2>
-                <div id="all-rs-list" class="rs-list">
-                    <!-- Room Selection Card List in this div -->
-                </div>
-                
-            </div>
+                <div class="info-box-section">
 
-            <button>Confirm Selection</button>
+                    <h2>Popular Spaces</h2>
+                    <div id="popular-rs-list" class="rs-list">
+                        <!-- Room Selection Card List in this div -->
+                    </div>
+
+                    <h2>All Spaces</h2>
+                    <div id="all-rs-list" class="rs-list">
+                        <!-- Room Selection Card List in this div -->
+                    </div>
+
+                </div>
+
+                <input onclick="confirmSpaceSelection()" type="submit" value="Confirm Selection" class="button">
+
+            </form>
         </section>
 
     </section>
