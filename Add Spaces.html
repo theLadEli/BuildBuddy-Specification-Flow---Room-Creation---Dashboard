@@ -37,11 +37,42 @@
 
     <section id="content">
 
-        <section id="room-selection-list">
-            <h2>Add your spaces</h2>
-            <p>Choose the spaces that will be created within your single storey rear extension.</p>
+        <section id="room-selection-list" class="info-box">
+            <div class="info-box-section">
+                <h2>Add your spaces</h2>
+                <p>Choose the spaces that will be created within your single storey rear extension.</p>    
+            </div>
 
-            <h2>Popular Spaces</h2>
+            <div class="info-box-section">
+                <h2>Popular Spaces</h2>
+
+                <!-- Room Selection Card List in this div -->
+                <div id="room-selection-list">
+
+                    <!-- Template Room Selection (rs) Card -->
+                    <div class="rs-card">
+
+                        <div class="rs-card-box">
+                            <div class="rs-icon-title">
+                                <img src="Assets/Space Icons/kitchen.svg" style="filter: brightness(0%)">
+                                <h3>Kitchen</h3>
+                            </div>
+
+                            <!-- <input type="checkbox" name="kitchen-checkbox"> -->
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <input type="number" class="rs-room-qty">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <button>Confirm Selection</button>
         </section>
 
     </section>

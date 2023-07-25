@@ -13,7 +13,7 @@ var selectedSpaceList = [
     }
 ];
 
-
+// Generate Selected Cards in the Dashboard
 function generateCard(item) {
     $(".selected-sc").append(`
         <div class="space-card">
