@@ -269,7 +269,12 @@ menu {
 /* Add Spaces Page */
 /* --------------- */
 
-/* Room Selection List */
+/* Room Selection (rs) List */
+.rs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 .rs-card {
     display: flex;
